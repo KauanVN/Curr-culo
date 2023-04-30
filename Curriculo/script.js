@@ -1,8 +1,4 @@
-let tags = ['h1',
-'h3',
-'div',
-'img',
-'p']
+let tags = ['h1','h3','div','img','p']
 let listaTags = []
 let body = document.querySelector('body')
 
@@ -12,13 +8,13 @@ tags.forEach(tag => {
     listaTags.push(tagNova)
 });
 
-listaTags[0].textContent = "Kaue de Souza"
+listaTags[0].textContent = "Kauê de Souza"
 listaTags[1].textContent = "PUBLICITÁRIO"
 
 // adicionei a div no DOM
 body.appendChild(listaTags[2])
 listaTags[0].classList.add('title')
-listaTags[1].classList.add('title2')
+listaTags[1].classList.add('titlep')
 
 // incluindo na div a tag img e a p
 
