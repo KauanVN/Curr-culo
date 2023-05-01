@@ -19,3 +19,14 @@ body{
 	
     background-image: linear-gradient(to right, #09e0aa, #057ddf);
 }
+.small {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  h1:nth-child(10){
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: brown;
+
+  }
