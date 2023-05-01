@@ -1,4 +1,4 @@
-let tags = ['h1','h3','div','img','p']
+let tags = ['h1','h3','div','img','p','span']
 let listaTags = []
 let body = document.querySelector('body')
 
@@ -23,18 +23,28 @@ listaTags[2].classList.add('texto')
 listaTags[2].appendChild(listaTags[0])
 listaTags[2].appendChild(listaTags[1])
 
+// Adicione o ícone RocketChat
+listaTags[2].appendChild(listaTags[5])
+listaTags[5].classList.add('material-symbols-outlined')
+listaTags[5].textContent = "chat"
 
 
-/*
-let body = document.querySelector('body')
-let p = 
-p.textContent = "Everson Bacelli"
-body.appendChild(p)
-*/
+listaTags[2].appendChild(listaTags[0])
+listaTags[2].appendChild(listaTags[1])
 
+// sobre mim
+let novaTag = criarTags('h1');
+novaTag.textContent = 'Sobre Mim';
+body.appendChild(novaTag);
+
+let novoH3 = criarTags('h3');
+novoH3.textContent = 'Informações sobre você';
+
+// Adiciona o novo elemento h3 como um filho do elemento "Sobre Mim"
+novaTag.appendChild(novoH3);
 
 // método fabrica
 function criarTags(tag){
-    let novaTag = document.createElement(tag)
-    return novaTag
+    let novaTag = document.createElement(tag);
+    return novaTag;
 }

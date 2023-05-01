@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    
 }
 
 .title{
@@ -15,9 +16,6 @@ body{
     margin-top: 80px;
 }
 .texto{
-	align-items: center;
+	
     background-image: linear-gradient(to right, #09e0aa, #057ddf);
-    width: 700px;
-    height: 190px;
-    margin-left: 300px;
 }
