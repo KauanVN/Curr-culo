@@ -2,6 +2,27 @@ body{
     background-color: white;
 }
 
+.container{
+    display: inline-block;
+    
+   
+}
+
+div{
+    display: inline-block;
+align-items: center;
+align-content: center;
+}
+.cima{
+
+    margin-left: 400px;
+margin-right: 300px;
+
+
+
+}
+
+
 .title{
 	font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +37,9 @@ body{
 .texto{
     background-image: linear-gradient(to right, #09e0aa, #057ddf);
     height: 250px;
+    width: 1200px;
+    text-align: center;
+    margin-left: 350px;
 }
 .small {
     font-size: 17px;
@@ -23,7 +47,7 @@ body{
     color: black;
 }
 
-h1:nth-child(10){
+.formacao,h1:nth-child(10){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: gray;
 }
@@ -38,17 +62,17 @@ h1:nth-child(6){
     color: gray;
 }
 
-h1:nth-child(4){
+.cima,h1:nth-child(4){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: gray;
 }
 
-h1:nth-child(17){
+.formacao,h1:nth-child(17){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: gray;
 }
 
-h1:nth-child(3){
+.formacao,h1:nth-child(3){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: gray;
 }
@@ -65,7 +89,7 @@ h5:nth-child(7) {
     color: black;
 }
 
-ull:nth-child(9){
+.ull:nth-child(9){
     font-size: 18px;
     font-weight: normal;
     color: black;
@@ -90,13 +114,14 @@ h5:nth-child(13) {
 
 h2:nth-child(14) {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: gray;;
+    color: gray;
 }
 
 h3:nth-child(15) {
     font-size: 18px;
     font-weight: normal;
     color: darkgrey;
+    
 }
 
 h5:nth-child(16) {
@@ -105,7 +130,7 @@ h5:nth-child(16) {
     color: black;
 }
 
-h2:nth-child(18) {
+.formacao  h2:nth-child(18) {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
@@ -131,3 +156,4 @@ h5:nth-child(21) {
 .h5 p{
    background-color: #057ddf00;
 }
+
