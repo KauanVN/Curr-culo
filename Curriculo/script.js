@@ -1,4 +1,3 @@
-
 let tags = ['h1', 'h3', 'h5', 'div', 'img', 'p', 'span', 'ul', 'li'];
 let listaTags = [];
 let body = document.querySelector('body');
