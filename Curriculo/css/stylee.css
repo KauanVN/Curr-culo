@@ -14,16 +14,11 @@ align-items: center;
 align-content: center;
 }
 .cima{
-
-    margin-left: 400px;
-margin-right: 300px;
-
-
-
+    margin-left: 380px;
+    margin-right: 300px;
 }
 
-
-.title{
+.title:nth-child(2){
 	font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -72,7 +67,12 @@ h1:nth-child(6){
     color: gray;
 }
 
-.formacao,h1:nth-child(3){
+.cima,h1:nth-child(2){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+
+.cima,h1:nth-child(1){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: gray;
 }
@@ -89,7 +89,7 @@ h5:nth-child(7) {
     color: black;
 }
 
-.ull:nth-child(9){
+.cima,.ull:nth-child(9){
     font-size: 18px;
     font-weight: normal;
     color: black;
@@ -155,5 +155,9 @@ h5:nth-child(21) {
 
 .h5 p{
    background-color: #057ddf00;
+}
+
+.formacao{
+    margin-left: -170px;
 }
 
