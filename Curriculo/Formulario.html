@@ -1,85 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Currículo</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<h1>Currículo</h1>
-	<form  id="formulario" action="">
+	<form id="formulario" action="">
 		<fieldset>
 			<legend>Dados Pessoais</legend>
-			<label for="nome">Nome:</label>
-			<input type="text" name="nome" id="nome">
+			<label for="nome">Nome:</label> <input type="text" name="nome" id="nome">
 			<br>
 			<br>
-			<label for="sobre">Sobre Mim:</label>
-			<input type="text" name="sobre" id="sobre">
-			<br>
-			<br>
-			<label for="habilidade">Habilidades:</label>
-			<input type="text" name="habilidade" id="habilidade">
-			<br>
-			<br>
+			 <label for="sobre">Sobre Mim:</label>
+			  <input type="text" name="sobre" id="sobre"> 
+			  <br>
+			  <br>
+			   <label for="habilidade">Habilidades:</label> <input type="text" name="habilidade" id="habilidade"> 
+			   <br>
+			   <br>
 			<label for="Informacoes">Outras Informaçoes:</label>
-			<input type="text" name="Informaçoes" id="Informaçoes">
-
-			<!--<label for="endereco">Endereço:</label>
-			<input type="text" name="endereco" id="endereco">-->
-			<!--<label for="telefone">Telefone:</label>
-			<input type="tel" name="telefone" id="telefone">-->
-			<!--<label for="email">Email:</label>
-			<input type="email" name="email" id="email">-->
-		</fieldset>
+			 <input type="text" name="Informaçoes" id="Informaçoes">
+		</fieldset> 
 		<br>
 		<br>
 		<fieldset>
-			<legend>Contato</legend>
+			<legend>Contato</legend> 
 			<label for="site">Site:</label>
-			<input type="text" name="site" id="site">
+			 <input type="text" name="site" id="site">
+			  <br>
+			  <br>
+			<label for="telefone">Celular:</label> <input type="tel" name="telefone" id="telefone"> 
 			<br>
 			<br>
-			<label for="telefone">Celular:</label>
-			<input type="tel" name="telefone" id="telefone">
-			<br>
-			<br>
-			<label for="email">Email:</label>
-			<input type="email" name="email" id="email">
-
-			<!--<label for="telefone">Site:</label>
-			<input type="tel" name="telefone" id="telefone">-->
-			<!--<label for="instituicao">Instituição:</label>
-			<input type="text" name="instituicao" id="instituicao">-->
-			<!--<label for="conclusao">Data de Conclusão:</label>
-			<input type="date" name="conclusao" id="conclusao">-->
-
-		</fieldset>
+			 <label	for="email">Email:</label> <input type="email" name="email" id="email">
+		</fieldset> 
 		<br>
 		<br>
 		<fieldset>
 			<legend>Formaçao</legend>
-			<label for="empresa">Empresa:</label>
-			<input type="text" name="empresa" id="empresa">
+			 <label for="empresa">Empresa:</label> 
+			 <input type="text" name="empresa" id="empresa">
+			  <br>
+			  <br>
+			   <label for="cargo">Cargo:</label>
+			    <input type="text" name="cargo" id="cargo">
 			<br>
-			<br>
-			<label for="cargo">Cargo:</label>
-			<input type="text" name="cargo" id="cargo">
-			<br>
-			<br>
-			<label for="inicio">Data de Início:</label>
-			<input type="date" name="inicio" id="inicio">
+			<br> 
+			<label for="inicio">Data de Início:</label> 
+			<input type="date" name="inicio" id="inicio"> 
 			<br>
 			<br>
 			<label for="fim">Data de Término:</label>
-			<input type="date" name="fim" id="fim">
-			<br>
-			<br>
-			<label for="descricao">Experiencia:</label>
-			<textarea name="descricao" id="descricao"></textarea>
-			<br>
-		</fieldset>
-		<input type="submit" value="Enviar">
-        <form action="index.html" method="POST"></form>
+			 <input type="date" name="fim" id="fim">
+			  <br>
+			  <br>
+			  <label for="descricao">Experiencia:</label> 
+			  <textarea name="descricao" id="descricao"></textarea>
+			   <br>
+		</fieldset> <input type="submit" value="Enviar">
 	</form>
+	<script> var form = document.getElementById("formulario"); form.addEventListener("submit", function (event) { event.preventDefault(); var nome = document.getElementById("nome").value; var sobre = document.getElementById("sobre").value; var habilidade = document.getElementById("habilidade").value; var informacoes = document.getElementById("Informaçoes").value; var site = document.getElementById("site").value; var telefone = document.getElementById("telefone").value; var email = document.getElementById("email").value; var empresa = document.getElementById("empresa").value; var cargo = document.getElementById("cargo").value; var inicio = document.getElementById("inicio").value; var fim = document.getElementById("fim").value; var descricao = document.getElementById("descricao").value; var url = "index.html?"; url += "nome=" + nome + "&"; url += "sobre=" + sobre + "&"; url += "habilidade=" + habilidade + "&"; url += "informacoes=" + informacoes + "&"; url += "site=" + site + "&"; url += "telefone=" + telefone + "&"; url += "email=" + email + "&"; url += "empresa=" + empresa + "&"; url += "cargo=" + cargo + "&"; url += "inicio=" + inicio + "&"; url += "fim=" + fim + "&"; url += "descricao=" + descricao; window.location.href = url; }); </script>
+	<script src="js/script.js"></script>
 </body>
+
 </html>

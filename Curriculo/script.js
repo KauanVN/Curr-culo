@@ -1,15 +1,28 @@
+let nome = getParameterByName('nome');
+let sobre = getParameterByName('sobre');
+let habilidade = getParameterByName('habilidade');
+let informacoes = getParameterByName('informacoes');
+let site = getParameterByName('site');
+let telefone = getParameterByName('telefone');
+let email = getParameterByName('email');
+let empresa = getParameterByName('empresa');
+let cargo = getParameterByName('cargo');
+let inicio = getParameterByName('inicio');
+let fim = getParameterByName('fim');
+let descricao = getParameterByName('descricao');
+
 let tags = ['h1', 'h3', 'h5', 'div', 'img', 'p', 'span', 'ul', 'li'];
 let listaTags = [];
 let body = document.querySelector('body');
 
 // criei as 3 tags: div, img e p
 tags.forEach(tag => {
-  let tagNova = criarTags(tag);
-  listaTags.push(tagNova);
+let tagNova = criarTags(tag);
+listaTags.push(tagNova);
 });
 
-listaTags[0].textContent = "Kauê de Souza";
-listaTags[1].textContent = "PUBLICITÁRIO";
+listaTags[1].textContent = "Kauê de Souza";
+listaTags[2].textContent = "PUBLICITÁRIO";
 
 // adicionei a div no DOM
 body.appendChild(listaTags[2]);
@@ -40,7 +53,7 @@ cima.appendChild(novaTag)
 cima.classList = "cima"
 
 let novoH5 = criarTags('h5');
-novoH5.innerHTML = 'Quando pequeno imaginava narrativas<br>diferentes para meus videogames e foi ali que<br>me apaixonei pela escrita criativa, pois através<br>dela eu posso fazer muito mais do que imagino...<br>Posso tornar real cada texto meu';
+novoH5.innerHTML = sobre ;
 novoH5.classList.add('small');
 cima.appendChild(novoH5);
 
@@ -53,14 +66,14 @@ novaTagH1.textContent = 'Habilidades';
 cima.appendChild(novaTagH1);
 
 // Lista de habilidades
-let habilidades = ['Comunicação verbal e escrita', 'Apresentação', 'Flexibilidade', 'Proatividade', 'Organização', 'Roteiro para social media', 'Visão multidisciplinar', 'Adaptabilidade'];
+let habilidades = [habilidade];
 let listaHabilidades = criarTags('ul');
 cima.appendChild(listaHabilidades);
 
 habilidades.forEach(habilidade => {
-  let li = criarTags('li');
-  li.textContent = habilidade;
-  listaHabilidades.appendChild(li);
+let li = criarTags('li');
+li.textContent = habilidade;
+listaHabilidades.appendChild(li);
 });
 
 // Outras Informações
@@ -69,87 +82,3 @@ novaTagH2.textContent = 'Outras Informações';
 cima.appendChild(novaTagH2);
 
 let novoH4 = criarTags('h5');
-novoH4.innerHTML = 'Conhecimento avançado em espanhol<br>Conhecimento básico em inglês<br>Participante da Feira de Escritores(2019)';
-novoH4.classList.add('small');
-cima.appendChild(novoH4);
-
-// Contato
-let novavTag = criarTags('h1');
-novavTag.textContent = 'Contato';
-cima.appendChild(novavTag);
-
-let Contato = ['Site: www.grandesite.com.br', 'Celular: (12) 3456-7890', 'E-mail: ola@grandesite.com.br'];
-let listaContato = criarTags('ull');
-cima.appendChild(listaContato);
-
-Contato.forEach(Contato => {
-    let li = criarTags('li');
-    li.textContent = Contato;
-    listaContato.appendChild(li);
-  });
-
-// Formação
-let divFormaCaoAbaixo = criarTags('div')
-divFormaCaoAbaixo.classList='formacao'
-  let novasTagH1 = criarTags('h1');
-novasTagH1.textContent = 'Formação';
-container.appendChild(divFormaCaoAbaixo);
-divFormaCaoAbaixo.appendChild(novasTagH1)
-
-let novasTagH2 = criarTags('h2');
-novasTagH2.textContent = 'MBA em Gestão de Marketing';
-divFormaCaoAbaixo.appendChild(novasTagH2)
-
-let novasTagH3 = criarTags('h3');
-novasTagH3.textContent = 'Universidade do Nonte / Jun. 2021 - atualmente';
-divFormaCaoAbaixo.appendChild(novasTagH3)
-
-let novasTagHH3 = criarTags('h5');
-novasTagHH3.innerHTML = 'Aluno com bolsa integral por bom currículo estudantil <br>Estudo a área de Gestão de Start-ups arco-íris auxiliada pelo<br>Marketing efetivo.';
-novasTagHH3.classList.add('small');
-divFormaCaoAbaixo.appendChild(novasTagHH3);
-
-//Outra parte da formação
-let novasTagGG = criarTags('h2');
-novasTagGG.textContent = 'Bacharel em Publicidade e Propaganda';
-divFormaCaoAbaixo.appendChild(novasTagGG)
-
-let novasTagH = criarTags('h3');
-novasTagH.textContent = 'Universidade do Nonte / Graduado em Jan. 2020';
-divFormaCaoAbaixo.appendChild(novasTagH)
-
-
-let novasTagG = criarTags('h5');
-novasTagG.innerHTML = 'Integrante por dois anos de um projeto de iniciação Científica<br>Ganhador do projeto destaque de 2018, eleito pelos professores.';
-novasTagG.classList.add('small');
-divFormaCaoAbaixo.appendChild(novasTagG);
-
-//Experiêcia
-
-let novasTagHHH = criarTags('h1');
-novasTagHHH.textContent = 'Experiência';
-divFormaCaoAbaixo.appendChild(novasTagHHH);
-
-let novasTagHHHH = criarTags('h2');
-novasTagHHHH.textContent = 'Redator Júnior';
-divFormaCaoAbaixo.appendChild(novasTagHHHH)
-
-let novasTagHHHHH = criarTags('h3');
-novasTagHHHHH.textContent = 'Millennium Desing / Mar. 2021 - Nov. 2021';
-divFormaCaoAbaixo.appendChild(novasTagHHHHH)
-
-let novasTag1 = criarTags('h5');
-novasTag1.innerHTML = 'Responsavel pela criação de textos para campanhas <br>Publicitárias e legendas para redes sociais atendidas pela agência';
-novasTag1.classList.add('small');
-divFormaCaoAbaixo.appendChild(novasTag1);
-
-let novasTag11 = criarTags('h5');
-novasTag11.innerHTML = 'Alguns clientes com quem trabalhei: Matia Labs, Araico <br>Farmacêutica e Cubi Games';
-novasTag11.classList.add('small');
-divFormaCaoAbaixo.appendChild(novasTag11);
-
-// método fabrica   
-function criarTags(tag) {
-  let novaTag = document.createElement(tag);
-  return novaTag; 
-}
