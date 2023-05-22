@@ -3,7 +3,7 @@ var form = document.getElementById("formulario");
 form.addEventListener("submit", function(event){
     event.preventDefault();
 
-    var nome = document.getElementById("nome").value;
+    
     var sobre = document.getElementById("sobre").value;
     var habilidade = document.getElementById("habilidade").value;
     var informacoes = document.getElementById("Informaçoes").value;
