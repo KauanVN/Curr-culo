@@ -4,14 +4,12 @@ var urlClass = new URL(urlAtual)
 var nome = urlClass.searchParams.get("nome");
 var sobre = urlClass.searchParams.get("sobre");
 var Informaçoes = urlClass.searchParams.get("Informaçoes");
-var site = urlClass.searchParams.get("site");
-var telefone = urlClass.searchParams.get("telefone");
-var email = urlClass.searchParams.get("email");
+var ContatoTexto = urlClass.searchParams.get("site");
 var cargo = urlClass.searchParams.get("cargo");
 var empresa = urlClass.searchParams.get("empresa");
 var inicio = urlClass.searchParams.get("inicio");
 var descricao = urlClass.searchParams.get("descricao");
-var empresa = urlClass.searchParams.get("empresa");
+var habilidadesTexto = urlClass.searchParams.get("habilidade");
 console.log("a")
 
 let tags = ['h1', 'h3', 'h5', 'div', 'img', 'p', 'span', 'ul', 'li'];
@@ -69,15 +67,10 @@ novaTagH1.textContent = 'Habilidades';
 cima.appendChild(novaTagH1);
 
 // Lista de habilidades
-let habilidades = ['Comunicação verbal e escrita', 'Apresentação', 'Flexibilidade', 'Proatividade', 'Organização', 'Roteiro para social media', 'Visão multidisciplinar', 'Adaptabilidade'];
-let listaHabilidades = criarTags('ul');
-cima.appendChild(listaHabilidades);
+let habilidades = criarTags('h5')
+habilidades.textContent = habilidadesTexto; 
+cima.appendChild(habilidades);
 
-habilidades.forEach(habilidade => {
-  let li = criarTags('li');
-  li.textContent = habilidade;
-  listaHabilidades.appendChild(li);
-});
 
 // Outras Informações
 let novaTagH2 = criarTags('h1');
@@ -94,15 +87,9 @@ let novavTag = criarTags('h1');
 novavTag.textContent = 'Contato';
 cima.appendChild(novavTag);
 
-let Contato = ['Site: www.grandesite.com.br', 'Celular: (12) 3456-7890', 'E-mail: ola@grandesite.com.br'];
-let listaContato = criarTags('ull');
-cima.appendChild(listaContato);
-
-Contato.forEach(Contato => {
-    let li = criarTags('li');
-    li.textContent = Contato;
-    listaContato.appendChild(li);
-  });
+let Contato = criarTags('h5')
+Contato.textContent = ContatoTexto;
+cima.appendChild(Contato);
 
 // Formação
 let divFormaCaoAbaixo = criarTags('div')
