@@ -2,6 +2,7 @@ var urlAtual = window.location.href
 var urlClass = new URL(urlAtual)
 
 var nome = urlClass.searchParams.get("nome");
+var NascimentoTexto = urlClass.searchParams.get("nascimento");
 var sobre = urlClass.searchParams.get("sobre");
 var Informaçoes = urlClass.searchParams.get("Informaçoes");
 var ContatoTexto = urlClass.searchParams.get("site");
@@ -60,6 +61,14 @@ cima.appendChild(novoH5);
 
 // Adiciona o novo elemento h3 como um filho do elemento "Sobre Mim"
 novaTag.appendChild(novoH5);
+
+let novaTagnasc = criarTags('h1');
+novaTagnasc.textContent = 'Data de Nascimento';
+cima.appendChild(novaTagnasc);
+
+let Nascimento = criarTags('h5')
+Nascimento.textContent = NascimentoTexto; 
+cima.appendChild(Nascimento);
 
 // Habilidades
 let novaTagH1 = criarTags('h1');
@@ -123,6 +132,26 @@ let novasTag1 = criarTags('h5');
 novasTag1.innerHTML = descricao;
 novasTag1.classList.add('small');
 divFormaCaoAbaixo.appendChild(novasTag1);
+
+
+//adicionando botão Imprimir 
+
+let botaoPrint = new criarTags("button")
+body.appendChild(botaoPrint)
+botaoPrint.classList ="btn-3"
+botaoPrint.id ="print"
+botaoPrint.textContent ="Imprimir"
+
+var botaoPrintE = document.getElementById("print")
+
+botaoPrintE.addEventListener('click',tirarPrint)
+
+function tirarPrint(){
+    botaoPrint.style.display = "none"
+    window.print()
+    botaoPrint.style.display = ""
+
+}
 
 // método fabrica   
 function criarTags(tag) {
